@@ -1,0 +1,34 @@
+{
+  "name": "__MSG_appName__",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "__MSG_appDescription__",
+  "icons": {
+    "16": "icons/icon.png",
+    "128": "icons/icon.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": ["scripts/background.js"]
+  },
+  "permissions": ["tabs", "storage", "http://*/*", "https://*/*"],
+  "options_ui": {
+    "page": "options.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["scripts/contentscript.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ],
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/icon.png",
+      "38": "icons/icon.png"
+    },
+    "default_title": "Flip Pen",
+    "default_popup": "popup.html"
+  }
+}

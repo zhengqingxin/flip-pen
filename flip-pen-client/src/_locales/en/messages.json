@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "Flip Pen",
+    "description": "Flip Pen"
+  },
+  "appDescription": {
+    "message": "Remote control the website",
+    "description": "Remote control the website"
+  },
+  "btnTooltip": {
+    "message": "Flip Pen",
+    "description": "Remote control the website"
+  }
+}
